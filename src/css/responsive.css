@@ -87,7 +87,6 @@
     .presentation-img {
         height: 70%;
         width: 70%;
-        border: 1px solid red;
     }
 
     .presentation-img img {
@@ -116,23 +115,27 @@
 
     .info-container .info {
         width: 100%;
+        height: 80vh;
         padding: 1em;
         overflow: auto;
+
     }
 
     .info-container .info p {
-        font-size: .9;
+        font-size: .8em;
         font-weight: 400;
     }
 
     .info-container .profile-picture {
-        height: 350px;
-        width: 500px;
+        height: 20vh;
+        width: 100%;
         margin-bottom: 1.5em;
+
+
     }
 
     .profile-picture img {
-        width: 90%;
+        width: 80%;
     }
 
     /* skills */
@@ -140,15 +143,22 @@
     .skills {
         width: 100%;
         padding: 1em;
-        margin-top: -3em;
+        justify-content: space-around;
+
+        height: 20vh;
+    }
+
+    .aux-border {
+        display: none;
     }
 
     .skills h2 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     .skills .techs {
         width: 100%;
+        height: 40%;
         justify-content: space-between;
     }
 
@@ -156,16 +166,24 @@
 
     .container-projects {
         width: 100%;
-        height: 80vh;
-        overflow: hidden;
-        display: block;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        padding: 1em;
+        gap: 2em;
 
+    }
+
+    .project-title {
+        text-align: left;
+        font-size: 2em;
 
     }
 
     .project {
         width: 100%;
         flex-direction: column;
+        justify-content: space-evenly;
 
     }
 
@@ -176,36 +194,76 @@
     .left,
     .right {
         width: 100%;
+    }
 
+    .left {
+        height: 70%;
+        width: 100%;
+    }
+
+    .link-project {
+        width: 100%;
+        height: 30%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-project a {
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(187, 187, 187);
+        font-weight: 600;
+        transition: all .3s ease-in-out;
 
     }
 
+    .link-project a:hover {
+        transform: scale(1.1);
+        color: rgb(240, 239, 239);
+    }
 
+    .right {
+        padding: 1em;
+        border: 1px;
+        height: 80%;
+        width: 100%;
+        /* background-color: rgb(21, 22, 63); */
+        background-color: rgba(7, 7, 36, 0.89);
+        display: flex;
+        border-radius: .5em;
+        align-items: center;
+        border: 1px solid rgb(187, 187, 187);
+    }
+
+    .right h3 {
+        font-size: 1.8em;
+        color: rgb(187, 187, 187);
+    }
+
+    .project-info {
+        height: 85%;
+        width: 100%;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        padding: 0;
+        overflow: auto;
+    }
+
+    .project-info::-webkit-scrollbar {
+        display: none;
+    }
 
     .right p {
         width: 100%;
+        height: auto;
         text-align: justify;
         font-size: 1.2em;
 
     }
 
-    .project-info span {
-        gap: 0;
-        align-items: center;
-        width: 100%;
-        height: 100%;
 
-
-    }
-
-    .project-info span a {
-
-        height: 100%;
-    }
-
-    .project-info span a:hover {
-        transform: scale(1.1);
-    }
 
     /* Projects navbar */
 
@@ -217,11 +275,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 20vh;
-        padding: 2em 1em;
+        padding: 1em 1em;
         background-color: rgb(12, 12, 43);
         align-items: center;
-        position: relative;
+
     }
 
     .select-project-mobile ul {
@@ -271,7 +328,6 @@
         width: 80%;
         padding: 1em 1.4em;
         position: absolute;
-        background-color: rgb(187, 187, 187);
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -280,10 +336,11 @@
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         font-size: 1.1em;
-        color: rgb(0, 0, 0);
+        color: rgb(187, 187, 187);
         flex: none;
         opacity: 0;
         transition: all .4s ease-in-out;
+        font-size: 1.2em;
     }
 
     .select-item-mobile.active {
