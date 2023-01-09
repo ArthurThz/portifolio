@@ -80,7 +80,7 @@ nav {
 
 
 /* Presentation */
-.inital-content {
+.initial-content {
     background-color: rgb(12, 12, 43);
     display: flex;
     flex-direction: column;
@@ -97,6 +97,10 @@ nav {
     gap: 2em;
     width: 100%;
     height: 100%;
+}
+
+.presentation .introduction h1 {
+    font-weight: bold;
 }
 
 .presentation-img {
@@ -383,7 +387,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
-    padding: 1em;
+
 }
 
 .right h3 {
@@ -407,8 +411,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: .4em;
     gap: 4em;
+
 
 }
 

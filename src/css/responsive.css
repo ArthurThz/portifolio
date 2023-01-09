@@ -8,6 +8,10 @@
         width: 100%;
         padding: 1em;
         gap: 5em;
+        position: fixed;
+        top: 0;
+        background-color: rgb(12, 12, 43);
+
     }
 
     body::-webkit-scrollbar {
@@ -16,10 +20,10 @@
 
     nav.active {
         height: 100vh;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        position: fixed;
+        z-index: 99;
+
+
     }
 
     .nav-left {
@@ -56,6 +60,9 @@
     }
 
     /* Presentation */
+    .initial-content {
+        margin-top: 12%;
+    }
 
     .presentation {
         flex-direction: column;
@@ -118,7 +125,6 @@
         height: 80vh;
         padding: 1em;
         overflow: auto;
-
     }
 
     .info-container .info p {
@@ -130,8 +136,6 @@
         height: 20vh;
         width: 100%;
         margin-bottom: 1.5em;
-
-
     }
 
     .profile-picture img {
@@ -144,7 +148,6 @@
         width: 100%;
         padding: 1em;
         justify-content: space-around;
-
         height: 20vh;
     }
 
@@ -217,7 +220,6 @@
         color: rgb(187, 187, 187);
         font-weight: 600;
         transition: all .3s ease-in-out;
-
     }
 
     .link-project a:hover {
@@ -230,7 +232,6 @@
         border: 1px;
         height: 80%;
         width: 100%;
-        /* background-color: rgb(21, 22, 63); */
         background-color: rgba(7, 7, 36, 0.89);
         display: flex;
         border-radius: .5em;
@@ -247,8 +248,10 @@
         height: 85%;
         width: 100%;
         border-bottom: 3px solid rgb(255, 255, 255);
+        word-spacing: normal;
         padding: 0;
         overflow: auto;
+        padding: 1em 0 1em 0;
     }
 
     .project-info::-webkit-scrollbar {
@@ -256,14 +259,10 @@
     }
 
     .right p {
-        width: 100%;
         height: auto;
-        text-align: justify;
-        font-size: 1.2em;
-
+        text-align: start;
+        font-size: 19px;
     }
-
-
 
     /* Projects navbar */
 
@@ -347,6 +346,82 @@
         opacity: 1;
     }
 
+}
+
+@media(max-height:800px) {
+
+    .initial-content {
+        justify-content: space-around;
+        height: 95vh;
+        padding-bottom: 1em;
+    }
+
+    .presentation {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .introduction {
+        height: auto;
+    }
+
+    .introduction h1 span {
+        font-size: 1.8em;
+    }
+
+    .btn-initial {
+        height: 20%;
+    }
+
+    .presentation-img {
+        height: 25%;
+        width: 60%;
+    }
+
+    .about-me {
+        height: 100%;
+    }
+
+    .info-container .profile-picture {
+        height: 40%;
+    }
 
 
+
+    .right {
+        height: 50%;
+        padding: 1em;
+    }
+
+    .right h3 {
+        font-size: 1.5em;
+        margin-bottom: .4em;
+    }
+
+    .project-info {
+        padding: 0;
+        height: 65%;
+        border-bottom-color: rgba(255, 255, 255, 0.479);
+    }
+
+
+
+}
+
+@media(max-height:700px) {
+    .initial-content {
+        margin-top: 15%;
+    }
+
+    .right .project-info p {
+        font-size: 1em;
+        text-align: left;
+        word-spacing: 1px;
+
+    }
+
+    .right .link-project a {
+        font-size: 1.1em;
+    }
 }
