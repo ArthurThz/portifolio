@@ -7,12 +7,17 @@ function removeActiveClass() {
     projects.forEach((item) => {
         item.classList.remove(active)
     })
+
+    selectProject.forEach((item) => {
+        item.classList.remove(active)
+    })
 }
 
 selectProject.forEach((item, index) => {
     item.addEventListener('click', () => {
         removeActiveClass()
         projects[index].classList.add(active)
+        item.classList.add(active)
     })
 })
 
