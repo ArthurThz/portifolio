@@ -6,6 +6,10 @@ body {
     min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* Headers */
 nav {
     width: 100%;
@@ -54,10 +58,11 @@ nav {
 
 
 .nav-item li a {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: rgb(248, 248, 248);
     transition: .3s ease-in-out;
     opacity: .6;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-item li a:hover {
@@ -85,7 +90,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     font-family: 'ubounded', sans-serif;
     color: rgb(187, 187, 187);
 }
@@ -93,10 +98,11 @@ nav {
 .presentation {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2em;
     width: 100%;
     height: 100%;
+
 }
 
 .presentation .introduction h1 {
@@ -104,7 +110,7 @@ nav {
 }
 
 .presentation-img {
-    width: 35%;
+    width: 40%;
     height: 90%;
     display: flex;
     align-items: center;
@@ -122,12 +128,12 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
-
+    gap: 3em;
 }
 
 .introduction span {
     color: rgb(227, 241, 94);
+    font-size: 2em;
 }
 
 .introduction p,
@@ -136,7 +142,7 @@ nav {
 }
 
 .introduction h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .introduction p {
@@ -148,8 +154,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    height: 9%;
+    width: 30%;
+    height: 8%;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -158,9 +164,7 @@ nav {
     border: 1px solid rgb(227, 241, 94);
     border-radius: 5px;
     margin-top: 1em;
-
     transition: .5s ease;
-
 }
 
 .introduction a:hover {
@@ -175,7 +179,8 @@ nav {
 .about-me {
     height: 65vh;
     width: 100%;
-
+    justify-content: center;
+    align-items: center;
     display: flex;
 
     flex-direction: column;
@@ -185,6 +190,7 @@ nav {
 
     font-family: 'Roboto', sans-serif;
     background-color: rgb(219, 128, 67);
+    /* background-color: rgb(160, 20, 20); */
 
 }
 
@@ -211,8 +217,10 @@ nav {
 
 .info {
     background-color: rgb(238, 159, 106);
+    /* background-color: rgb(28, 28, 65); */
     border-radius: 10px;
     padding: 2em;
+
 }
 
 .info::-webkit-scrollbar {
@@ -238,6 +246,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: rgb(31, 30, 30);
+    /* color: rgb(145, 141, 141); */
 }
 
 .info-container .profile-picture {
@@ -268,6 +277,8 @@ nav {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(219, 128, 67);
+    /* background-color: rgb(160, 20, 20); */
+
 
 }
 
@@ -280,6 +291,7 @@ nav {
 .skills h2 {
     font-size: 35px;
     color: rgb(32, 32, 32);
+    /* color: rgb(216, 216, 216); */
 }
 
 .skills .techs {
@@ -289,12 +301,15 @@ nav {
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(32, 32, 32);
 }
 
 .aux-border {
     width: 80%;
     height: 4px;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(32, 32, 32);
     margin-bottom: 1em;
     border-radius: 10px;
 }
@@ -312,6 +327,10 @@ nav {
     padding: 1em;
     font-family: 'Roboto', sans-serif;
 
+}
+
+.container-projects h1 {
+    color: rgb(187, 187, 187);
 }
 
 .project-title {
@@ -385,28 +404,39 @@ nav {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     color: #fff;
 
 }
 
 .right h3 {
-    text-align: left;
+    text-align: center;
+    font-size: 2em;
 }
 
 .link-project {
     width: 100%;
     padding: 1em;
+    height: 10%;
     display: flex;
     justify-content: center;
 }
 
 .link-project a {
-    color: #fff;
+    color: rgb(187, 187, 187);
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.link-project a:hover {
+    transform: scale(1.1);
 }
 
 .right .project-info {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -417,8 +447,7 @@ nav {
 }
 
 .right p {
-    font-size: 1.1em;
-    padding: 1em;
+    font-size: 1.4em;
     color: rgb(187, 187, 187);
 }
 
@@ -430,8 +459,6 @@ nav {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-
-
 }
 
 .select-project-mobile {
@@ -456,9 +483,10 @@ nav {
 }
 
 .select-item {
-    height: 60%;
+    height: 50%;
     width: 15%;
-    background-color: rgb(187, 187, 187);
+    background-color: transparent;
+    border: 1px solid rgb(187, 187, 187);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -467,10 +495,16 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
-    color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187);
     flex: none;
-    opacity: .8;
+    opacity: .7;
     transition: all .4s ease-in-out;
+}
+
+.select-item.active {
+    opacity: 1;
+    background-color: rgb(59, 59, 145);
+    border: none;
 }
 
 .select-item:hover {

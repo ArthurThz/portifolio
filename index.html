@@ -35,7 +35,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav class="navbar">
         <!-- left/top side -->
         <div class="nav-left">
             <div class="sidebar-menu">
@@ -47,11 +47,6 @@
         </div>
         <!-- right/bottom side -->
         <ul class="nav-right">
-            <div class="nav-item">
-                <li class="sidebar-item">
-                    <a href="#home">Home</a>
-                </li>
-            </div>
 
             <div class="nav-item">
                 <li class="sidebar-item">
@@ -82,7 +77,7 @@
     <section id="home" class="initial-content">
         <div class="presentation">
             <div class="introduction">
-                <h1>Olá me chamo <br><span>Arthur Theodoro</span></h1>
+                <h1>Olá, me chamo <br><span>Arthur Theodoro</span></h1>
                 <p>Sou desenvolvedor Front-End</p>
                 <p>Venha conhecer um pouco mais sobre mim</p>
                 <a class="btn-initial" href="#about-me">Bora lá!</a>
@@ -101,30 +96,28 @@
             <div class="info">
                 <p>Meu primeiro contato com programação veio em 2016 quando ingressei no ensino médio que era integrado
                     ao técnico, no começo a parte front-end não me cativou pois eram uma infinidade de tags para decorar
-                    e também não utilizavamos javascript, ou seja, faziamos paginas estáticas sem funcionalidades.</p>
+                    e também não utilizávamos Javascript, ou seja, fazíamos páginas estáticas sem funcionalidades.</p>
 
-                <p>Fiquei apaixonado por java que era uma das máterias, poder escrever códigos para resolver problemas
-                    matematicos mesmo que simples viraram minha paixão. Foi quando percebi que queria que a
-                    programação se tornasse minha profissão.</p>
+                <p>Fiquei apaixonado por Java que era uma das matérias, poder escrever códigos para resolver problemas
+                    matemáticos mesmo que simples viraram minha paixão. Foi quando percebi que queria que a programação
+                    se tornasse minha profissão.</p>
 
-                <p>Conclui o ensino médio em 2018 e comecei a aplicar para vagas de programador, devido a baixa
-                    experiencia e conhecimetos superficiais me frustrei e comecei a trabalhar na area admistrativa, que
-                    foi aonde permaneci até o final de 2020 e fiquei durante todo este periodo sem qualquer contato com
+                <p>Conclui o ensino médio em 2018 e comecei a aplicar para vagas de programador, devido à baixa
+                    experiencia e conhecimentos superficiais me frustrei e comecei a trabalhar na área admistrativa, que
+                    foi aonde permaneci até o final de 2020 e fiquei durante todo este período sem qualquer contato com
                     programação.</p>
 
                 <p>No começo de 2021 foi quando decidi que voltaria a estudar para conseguir finalmente ingressar na
-                    area
-                    da tecnologia, mas como havia perdido toda a familiaridade com a programação tive que começar do
-                    zero
-                    novamente.</p>
-                <p> Buscando um norte no youtube acabei encontrando um video de um rapaz fazendo um clone do instagram
+                    área da tecnologia, mas como havia perdido toda a familiaridade com a programação tive que começar
+                    do zero novamente.</p>
+
+                <p> Buscando um norte no youtube acabei encontrando um vídeo de um rapaz fazendo um clone do instagram
                     apenas com html e css e fiquei impressionado com o quanto as coisas se completavam. E foi a partir
-                    dai
-                    que tive certeza que queria fazer isso para o resto da vida.</p>
+                    daquele momento que tive a certeza, queria fazer aquilo para o resto da vida.</p>
 
 
-                <p>Hoje conto com alguns projetos no meu github utilizando HTML, CSS e JS. E atualmente estou estudando
-                    reactJS com um projeto em andamento, que também tem um repositório disponivel para consulta.</p>
+                <p>Hoje conto com alguns projetos no meu GitHub utilizando HTML, CSS e JS. E atualmente estou estudando
+                    ReactJS com um projeto em andamento, que também tem um repositório disponível para consulta.</p>
             </div>
             <div class="profile-picture">
                 <img src="src/static/img/perfil-portifolio.jpg" alt="">
@@ -149,7 +142,7 @@
             </div>
             <div class="each-tech javascript">
                 <img src="src/static/icon/icons8-javascript-144.svg" alt="javascript icon">
-                <p>Javscript</p>
+                <p>Javascript</p>
 
             </div>
             <div class="each-tech reactjs">
@@ -169,7 +162,7 @@
                     <div class="left">
                         <h1>Random Movie</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/random-movie-desktop.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/random-movie.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -180,7 +173,49 @@
                                 juntamente com suas informações</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/random-movie" target="_blank">Acesse o projeto no
+                                GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <div class="left">
+                        <h1>Consulta já</h1>
+                        <div class="container-img">
+                            <img src="src/static/img/projetos/consultaja.PNG" alt="imagem do projeto">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h3>Descrição</h3>
+                        <section class="project-info">
+                            <p>Aplicação utilizada para marcar e gerenciar consultas utilizando ReactJS e um db.JSON
+                                como API</p>
+                        </section>
+                        <div class="link-project">
+                            <a href="https://github.com/ArthurThz/consultaja" target="_blank">Acesse o projeto no
+                                GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <div class="left">
+                        <h1>Netflix Clone</h1>
+                        <div class="container-img">
+                            <img src="src/static/img/projetos/netflix-clone.PNG" alt="imagem do projeto">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h3>Descrição</h3>
+                        <section class="project-info">
+                            <p>Clone do netflix que utiliza a API do TMVDB</p>
+                        </section>
+                        <div class="link-project">
+                            <a href="https://github.com/ArthurThz/Netflix-Clone" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -189,7 +224,7 @@
                     <div class="left">
                         <h1>Landing Page</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/get-some-trip-1.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/landing-page.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -199,7 +234,8 @@
                             <p>Landing page referente à uma empresa de turismo e trilhas</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/landing-page" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -208,7 +244,7 @@
                     <div class="left">
                         <h1>Social Tree</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/social-tree-desktop.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/social-tree.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -218,7 +254,8 @@
                             <p>Uma social tree que contem todas as suas redes socias</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/social-tree" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -227,17 +264,18 @@
                     <div class="left">
                         <h1>Pokédex</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/pokedex-desktop.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/pokedex.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
                     <div class="right">
                         <h3>Descrição</h3>
                         <section class="project-info">
-                            <p>Projeto que simula os cards de Pokémon</p>
+                            <p>Aplicativo que simula os cards de Pokémon</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/pokedex" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -246,7 +284,7 @@
                     <div class="left">
                         <h1>Formulário API VIA CEP</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/form-desktop.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/formulario.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -256,7 +294,8 @@
                             <p>Formulário que utiliza a API via cep para preencher os campos dinâmicamente</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/form" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -265,7 +304,7 @@
                     <div class="left">
                         <h1>Do a question</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/do-a-question.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/question.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -275,7 +314,8 @@
                             <p>Projeto que gera uma resposta para cada pergunta inserida</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/question" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -284,7 +324,7 @@
                     <div class="left">
                         <h1>Switch to dark mode</h1>
                         <div class="container-img">
-                            <img src="src/static/img/projetos/dark-theme-light.JPG" alt="imagem do projeto">
+                            <img src="src/static/img/projetos/darkmode.PNG" alt="imagem do projeto">
                         </div>
                     </div>
 
@@ -294,7 +334,8 @@
                             <p>Projeto que muda o tema com o clique do botão</p>
                         </section>
                         <div class="link-project">
-                            <a href="" target="_blank">Acesse o projeto no GitHub</a>
+                            <a href="https://github.com/ArthurThz/toggle-dark-mode" target="_blank">Acesse o projeto no
+                                GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -307,7 +348,11 @@
             <button class="arrow left"><img src="src/static/icon/arrow-white.png" alt="arrow icon"></button>
 
             <ul class="options">
-                <li class="select-item">Random Movie</li>
+                <li class="select-item active">Random Movie</li>
+
+                <li class="select-item">Consulta Já</li>
+
+                <li class="select-item">Netflix Clone</li>
 
                 <li class="select-item">Landing Page</li>
 
@@ -331,6 +376,10 @@
 
             <ul class="options-mobile">
                 <li class="select-item-mobile active">Random Movie</li>
+
+                <li class="select-item-mobile">Consulta Já</li>
+
+                <li class="select-item-mobile">Netflix Clone</li>
 
                 <li class="select-item-mobile">Landing Page</li>
 

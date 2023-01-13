@@ -8,10 +8,7 @@
         width: 100%;
         padding: 1em;
         gap: 5em;
-        position: fixed;
-        top: 0;
         background-color: rgb(12, 12, 43);
-
     }
 
     body::-webkit-scrollbar {
@@ -59,16 +56,21 @@
         display: flex;
     }
 
-    /* Presentation */
     .initial-content {
-        margin-top: 12%;
+        height: 100vh;
     }
 
     .presentation {
         flex-direction: column;
         padding: 1em;
         justify-content: start;
-        height: 80vh;
+        height: 90vh;
+    }
+
+    .introduction {
+        height: 60%;
+        justify-content: space-around;
+        gap: 0;
     }
 
     .introduction p {
@@ -78,7 +80,6 @@
     .introduction h1 {
         font-size: 2em;
         font-weight: 400;
-
     }
 
     .introduction h1 span {
@@ -92,13 +93,14 @@
     }
 
     .presentation-img {
-        height: 70%;
-        width: 70%;
+        height: 40%;
+
+        width: 100%;
     }
 
     .presentation-img img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 85%;
     }
 
     /* about me */
@@ -163,6 +165,7 @@
         width: 100%;
         height: 40%;
         justify-content: space-between;
+        font-size: 1.2em;
     }
 
     /* Projects */
@@ -192,15 +195,13 @@
 
     .item {
         flex-direction: column;
+        justify-content: space-around;
     }
 
-    .left,
-    .right {
-        width: 100%;
-    }
+
 
     .left {
-        height: 70%;
+        height: 60%;
         width: 100%;
     }
 
@@ -227,16 +228,28 @@
         color: rgb(240, 239, 239);
     }
 
+    .project ul {
+        width: 100%;
+
+        padding: 0;
+    }
+
     .right {
-        padding: 1em;
         border: 1px;
         height: 80%;
         width: 100%;
         background-color: rgba(7, 7, 36, 0.89);
+        padding: 1em;
         display: flex;
         border-radius: .5em;
         align-items: center;
-        border: 1px solid rgb(187, 187, 187);
+
+    }
+
+    .right .link-project {
+        border-top: 1px solid rgb(187, 187, 187);
+        width: 90%;
+        font-size: 1em;
     }
 
     .right h3 {
@@ -244,14 +257,15 @@
         color: rgb(187, 187, 187);
     }
 
-    .project-info {
+    .right .project-info {
         height: 85%;
         width: 100%;
-        border-bottom: 3px solid rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
         word-spacing: normal;
-        padding: 0;
         overflow: auto;
-        padding: 1em 0 1em 0;
+        padding: 1em .2em;
+
     }
 
     .project-info::-webkit-scrollbar {
@@ -259,9 +273,11 @@
     }
 
     .right p {
-        height: auto;
-        text-align: start;
-        font-size: 19px;
+        padding: .4em;
+        width: 100%;
+        font-size: 21px;
+        letter-spacing: 1px;
+
     }
 
     /* Projects navbar */
@@ -399,20 +415,60 @@
         margin-bottom: .4em;
     }
 
+    .right p {
+        font-size: 18px;
+    }
+
     .project-info {
         padding: 0;
         height: 65%;
         border-bottom-color: rgba(255, 255, 255, 0.479);
     }
 
+}
 
+@media (max-height:790px) {
 
+    .introduction {
+        justify-content: space-around;
+        gap: 1em;
+
+        height: 60%;
+    }
+
+    .presentation a {
+        width: 40%;
+    }
+
+    .presentation-img {
+
+        height: 35%;
+        width: 95%;
+    }
+
+    .project .item {
+        justify-content: space-around;
+    }
+
+    .left {
+        height: 45%;
+    }
+
+    .right .link-project {
+        font-size: .9em;
+    }
+}
+
+@media (max-height:740px) {
+
+    .presentation-img {
+        width: 90%;
+        height: 40%;
+    }
 }
 
 @media(max-height:700px) {
-    .initial-content {
-        margin-top: 15%;
-    }
+
 
     .right .project-info p {
         font-size: 1em;
@@ -423,5 +479,135 @@
 
     .right .link-project a {
         font-size: 1.1em;
+    }
+}
+
+@media(max-height:680px) {
+    .presentation {
+        height: 100vh;
+    }
+
+    .presentation .introduction {
+        justify-content: space-around;
+        height: 60%;
+        gap: 0;
+    }
+
+    .presentation h1 {
+        font-size: 1.5em;
+    }
+
+    .presentation a {
+        width: 40%;
+    }
+
+    .presentation-img {
+        height: 40%;
+        width: 100%;
+    }
+
+    .presentation-img img {
+        height: 80%;
+        width: 60%;
+    }
+}
+
+@media (max-height:600px) {
+    nav.active {
+        height: 100%;
+    }
+
+    .nav-right {
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .nav-right .nav-item {
+        font-size: .7em;
+    }
+
+    .initial-content {
+        height: 90vh;
+
+
+    }
+
+    .presentation .introduction {
+        line-height: normal;
+        justify-content: space-around;
+        gap: 0;
+        height: 60%;
+    }
+
+    .presentation a {
+        width: 35%;
+    }
+
+    .presentation .presentation-img {
+        height: 39%;
+    }
+
+    .presentation-img img {
+        height: 90%;
+    }
+
+    .presentation .introduction h1 {
+        font-size: 1.3em;
+    }
+
+    .presentation .introduction p {
+        font-size: 1em;
+    }
+
+    .presentation .introduction a {
+        height: 2em;
+        font-size: 1.1em;
+    }
+
+    .item .left h1 {
+        font-size: 1.3em;
+    }
+
+    .info-container {
+        height: 40%;
+    }
+
+    .skills .techs {
+        font-size: 1em;
+    }
+
+    .left {
+        height: 50%;
+    }
+
+    .project .item {
+        justify-content: space-around;
+    }
+
+    .right {
+        padding: 1em;
+        height: 50%;
+        padding: .4em 0 .2em 0;
+    }
+
+
+    .right h3 {
+        font-size: 1.1em;
+    }
+
+    .right .project-info {
+        height: 100%;
+    }
+
+    .right .project-info p {
+        font-size: .9em;
+    }
+
+    .right .link-project a {
+        font-size: 1em;
+    }
+
+    .select-item-mobile {
+        font-size: 1em;
     }
 }

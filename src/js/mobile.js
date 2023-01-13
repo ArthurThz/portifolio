@@ -1,9 +1,10 @@
-// Arrows Funcionality Mobile
+
 const leftArrowMobile = document.querySelector('.arrow-left-mobile')
 const rightArrowMobile = document.querySelector('.arrow-right-mobile')
 
 const selectedItemMobile = document.querySelectorAll('.select-item-mobile')
-
+// Arrows Funcionality
+// RIGHT
 rightArrowMobile.addEventListener('click', () => {
     let i = 0;
     selectedItemMobile.forEach((item, index) => {
@@ -20,6 +21,7 @@ rightArrowMobile.addEventListener('click', () => {
     projects[i].classList.add('active')
 })
 
+// LEFT
 leftArrowMobile.addEventListener('click', () => {
     let i = 0;
     selectedItemMobile.forEach((item, index) => {
@@ -35,6 +37,8 @@ leftArrowMobile.addEventListener('click', () => {
     selectedItemMobile[i].classList.add('active')
     projects[i].classList.add('active')
 })
+
+// NavBar
 
 
 
