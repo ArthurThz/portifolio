@@ -329,6 +329,10 @@ nav {
 
 }
 
+.container-projects h1 {
+    color: rgb(187, 187, 187);
+}
+
 .project-title {
     color: #fff;
     text-align: center;
