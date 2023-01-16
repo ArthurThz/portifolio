@@ -14,13 +14,14 @@ body::-webkit-scrollbar {
 nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.5em 2em;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background-color: rgb(12, 12, 43);
     color: rgb(187, 187, 187);
+    height: 10vh;
 }
 
 .sidebar-menu {
@@ -58,7 +59,7 @@ nav {
 
 
 .nav-item li a {
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: rgb(248, 248, 248);
     transition: .3s ease-in-out;
     opacity: .6;
@@ -78,8 +79,9 @@ nav {
 }
 
 .nav-left h1 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     text-align: center;
+    display: none;
 }
 
 
@@ -102,7 +104,6 @@ nav {
     gap: 2em;
     width: 100%;
     height: 100%;
-
 }
 
 .presentation .introduction h1 {
@@ -115,11 +116,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .presentation-img img {
-    width: 90%;
-    height: 90%;
+    width: 83%;
+    height: 83%;
 }
 
 .introduction {
@@ -128,12 +130,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3em;
+    gap: 2.5em;
+    padding: 1em;
 }
 
 .introduction span {
     color: rgb(227, 241, 94);
-    font-size: 2em;
+    font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 .introduction p,
@@ -142,11 +146,11 @@ nav {
 }
 
 .introduction h1 {
-    font-size: 3em;
+    font-size: 2.2em;
 }
 
 .introduction p {
-    font-size: 2.2em;
+    font-size: 1.6em;
     font-weight: 500;
 }
 
@@ -154,12 +158,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 25%;
     height: 8%;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: rgb(227, 241, 94);
     border: 1px solid rgb(227, 241, 94);
     border-radius: 5px;
@@ -182,20 +186,16 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
-
     flex-direction: column;
-
     padding: 1.5em 2em;
     gap: 1em;
-
     font-family: 'Roboto', sans-serif;
     background-color: rgb(219, 128, 67);
-    /* background-color: rgb(160, 20, 20); */
-
 }
 
 .about-me h2 {
-    font-size: 35px;
+    font-size: 2em;
+    color: rgb(32, 32, 32);
 }
 
 .info-container {
@@ -217,7 +217,6 @@ nav {
 
 .info {
     background-color: rgb(238, 159, 106);
-    /* background-color: rgb(28, 28, 65); */
     border-radius: 10px;
     padding: 2em;
 
@@ -239,20 +238,18 @@ nav {
 }
 
 .info p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5em;
     text-align: justify;
     margin-bottom: 1em;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(31, 30, 30);
-    /* color: rgb(145, 141, 141); */
 }
 
 .info-container .profile-picture {
     width: 40%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,21 +274,16 @@ nav {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(219, 128, 67);
-    /* background-color: rgb(160, 20, 20); */
-
-
 }
 
 .each-tech img {
-    height: 80%;
-    width: 80%;
-
+    height: 70%;
+    width: 70%;
 }
 
 .skills h2 {
-    font-size: 35px;
+    font-size: 1.8em;
     color: rgb(32, 32, 32);
-    /* color: rgb(216, 216, 216); */
 }
 
 .skills .techs {
@@ -299,9 +291,8 @@ nav {
     justify-content: space-between;
     width: 60%;
     font-weight: bold;
-    font-size: 18px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
     color: rgb(32, 32, 32);
 }
@@ -331,6 +322,7 @@ nav {
 
 .container-projects h1 {
     color: rgb(187, 187, 187);
+    font-size: 2em;
 }
 
 .project-title {
@@ -405,14 +397,15 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 1em;
     color: #fff;
-
 }
 
 .right h3 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .link-project {
@@ -425,7 +418,7 @@ nav {
 
 .link-project a {
     color: rgb(187, 187, 187);
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: all .3s ease-in-out;
@@ -435,20 +428,11 @@ nav {
     transform: scale(1.1);
 }
 
-.right .project-info {
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4em;
-
-
-}
 
 .right p {
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: rgb(187, 187, 187);
+    text-align: justify;
 }
 
 /* Projects navbar */
@@ -474,7 +458,6 @@ nav {
     padding: 1em;
     gap: 1em;
     overflow-y: auto;
-    margin-left: -1em;
     scroll-behavior: smooth;
 }
 
@@ -493,8 +476,8 @@ nav {
     justify-content: center;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: 400;
+    font-size: .9em;
     color: rgb(187, 187, 187);
     flex: none;
     opacity: .7;
@@ -505,6 +488,7 @@ nav {
     opacity: 1;
     background-color: rgb(59, 59, 145);
     border: none;
+    font-weight: bold;
 }
 
 .select-item:hover {
