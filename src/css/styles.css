@@ -4,10 +4,12 @@ html {
 
 body {
     min-height: 100vh;
+    background-color: rgb(12, 12, 43);
 }
 
 body::-webkit-scrollbar {
     display: none;
+
 }
 
 /* Headers */

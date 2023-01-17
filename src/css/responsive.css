@@ -1,5 +1,10 @@
 @media(max-width: 650px) {
 
+    /* Animation Text */
+    .text {
+        font-size: .4em;
+    }
+
     /* Sidebar */
     nav {
         flex-direction: column;
@@ -396,6 +401,10 @@
 }
 
 @media(max-width:330px) {
+
+    .text {
+        font-size: .3em;
+    }
 
     /* SIDE MENU */
     .nav-left h1 {
