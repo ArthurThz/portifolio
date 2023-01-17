@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/animation.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,24 @@
 </head>
 
 <body>
+    <!-- Animation -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Olá</span>
+            </h1>
+
+            <h1 class="hide">
+                <span class="text">Seja Bem-Vindo</span>
+            </h1>
+
+            <h1 class="hide">
+                <span class="text">Ao meu portifólio</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="slider"></div>
     <!-- Navbar -->
     <nav class="navbar">
         <!-- left/top side -->
@@ -389,16 +408,13 @@
         </div>
     </footer>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"
-        integrity="sha512-byzUdBXaTSrgrlWDvkyU6TBkRSUUiI3EzVIdZtrYEUx1hFnsel9QmEs3QWpKo+8N+G9eOjSxQzFWF1PLq0+WVw=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="src/js/app.js"></script>
     <script src="src/js/mobile.js"></script>
+    <script src="src/js/animation.js"></script>
 </body>
 
 </html>
