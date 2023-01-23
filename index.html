@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Theodoro</title>
+    <title>Meu portifólio</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="stylesheet" href="src/css/animation.css">
+    <!-- Ícone da página -->
+    <link rel="icon" href="src/static/icon/area-de-trabalho-do-computador.png">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +53,7 @@
                 <span class="text">Ao meu portifólio</span>
             </h1>
         </div>
-    </div>
+    </div> -->
 
     <div class="slider"></div>
     <!-- Navbar -->
@@ -97,7 +99,7 @@
     <section id="home" class="initial-content">
         <div class="presentation">
             <div class="introduction">
-                <h1>Olá, me chamo <br><span>Arthur Theodoro</span></h1>
+                <h1>Meu nome é <br><span>Arthur Theodoro</span></h1>
                 <p>Sou desenvolvedor Front-End</p>
                 <p>Venha conhecer um pouco mais sobre mim</p>
                 <a class="btn-initial" href="#about-me">Bora lá!</a>
@@ -110,66 +112,62 @@
     </section>
     <!-- About me section -->
     <section id="about-me" class="about-me">
-        <h2>Sobre mim</h2>
+        <h1>Sobre mim</h1>
+        <div class="container-img">
+            <img src="src/static/img/perfil-portifolio.jpg" alt="">
+        </div>
+        <div class="p-wrapper">
+            <div class="item-about active">
+                <h2>O inicio</h2>
+                <div class="text">
+                    <p>Minha primeira experiência com programação veio no ano de em 2016 quando ingressei no ensino
+                        médio que era integrado ao técnico.</p>
+                    <p> No começo a parte front-end não me cativou pois eram uma infinidade de tags para decorar.</p>
+                    <p>Não utilizávamos Javascript, então faziamos apenas páginas estáticas.</p>
+                    <p>Acabei me identificando com Java e queria seguir na área de back-end.</p>
+                </div>
 
-        <div class="info-container">
-            <div class="info">
-                <p>Meu primeiro contato com programação veio em 2016 quando ingressei no ensino médio que era integrado
-                    ao técnico, no começo a parte front-end não me cativou pois eram uma infinidade de tags para decorar
-                    e também não utilizávamos Javascript, ou seja, fazíamos páginas estáticas sem funcionalidades.</p>
-
-                <p>Fiquei apaixonado por Java que era uma das matérias, poder escrever códigos para resolver problemas
-                    matemáticos mesmo que simples viraram minha paixão. Foi quando percebi que queria que a programação
-                    se tornasse minha profissão.</p>
-
-                <p>Conclui o ensino médio em 2018 e comecei a aplicar para vagas de programador, devido à baixa
-                    experiencia e conhecimentos superficiais me frustrei e comecei a trabalhar na área admistrativa, que
-                    foi aonde permaneci até o final de 2020 e fiquei durante todo este período sem qualquer contato com
-                    programação.</p>
-
-                <p>No começo de 2021 foi quando decidi que voltaria a estudar para conseguir finalmente ingressar na
-                    área da tecnologia, mas como havia perdido toda a familiaridade com a programação tive que começar
-                    do zero novamente.</p>
-
-                <p> Buscando um norte no youtube acabei encontrando um vídeo de um rapaz fazendo um clone do instagram
-                    apenas com html e css e fiquei impressionado com o quanto as coisas se completavam. E foi a partir
-                    daquele momento que tive a certeza, queria fazer aquilo para o resto da vida.</p>
-
-
-                <p>Hoje conto com alguns projetos no meu GitHub utilizando HTML, CSS e JS. E atualmente estou estudando
-                    ReactJS com um projeto em andamento, que também tem um repositório disponível para consulta.</p>
             </div>
-            <div class="profile-picture">
-                <img src="src/static/img/perfil-portifolio.jpg" alt="">
+            <div class="item-about">
+                <h2>A decepção</h2>
+                <div class="text">
+                    <p>Conclui o ensino médio em 2018 e imediatamente comecei a aplicar para vagas de desenvolvedor.</p>
+                    <p>Sem experiência e com poucos conhecimentos, quase não conseguia entrevistas.</p>
+                    <p>Me frustrei e comecei a trabalhar na área admistrativa.</p>
+                    <p>Permaneci até o final de 2020 e fiquei durante todo este período sem qualquer contato com
+                        programação.</p>
+                </div>
+
+            </div>
+            <div class="item-about">
+                <h2>A certeza</h2>
+                <div class="text">
+                    <p>Em 2021 voltei a estudar.</p>
+                    <p>Buscando um norte no youtube acabei encontrando um vídeo de um rapaz fazendo um clone do
+                        instagram
+                        apenas com
+                        html e css.</p>
+                    <p>Pesquisei mais sobre e vi como o front-end poderia proporcionar uma experiência visual e
+                        funcional
+                        ao mesmo tempo.</p>
+                    <p>Foi a partir daquele
+                        momento que tive a certeza, queria fazer aquilo para o resto da vida.</p>
+                </div>
+
             </div>
         </div>
+        <div class="arrows-container">
 
-    </section>
+            <img class="arrow-about left-about" src="src/static/icon/left-arrow.png" alt="seta esquerda">
+            <img class="arrow-about right-about" src="src/static/icon/right-arrow.png" alt="seta direita">
+        </div>
 
-    <!-- Techs that I use -->
-    <section class="skills">
-        <div class="aux-border"></div>
-        <h2>Linguagens que utilizo</h2>
-        <div class="techs">
-            <div class="each-tech html">
-                <img src="src/static/icon/icons8-html-5-144.svg" alt="html icon">
-                <p>HTML 5</p>
-            </div>
-            <div class="each-tech css">
-                <img src="src/static/icon/icons8-css3-144.svg" alt="css icon">
-                <p>CSS 3</p>
-
-            </div>
-            <div class="each-tech javascript">
-                <img src="src/static/icon/icons8-javascript-144.svg" alt="javascript icon">
-                <p>Javascript</p>
-
-            </div>
-            <div class="each-tech reactjs">
-                <img src="src/static/icon/icons8-react-native-144.svg" alt="reactjs icon">
-                <p>ReactJS</p>
-
-            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-icon"><img src="src/static/icon/icons8-html-5-144.svg" alt=""></div>
+            <div class="skills-icon"><img src="src/static/icon/icons8-css3-144.svg" alt=""></div>
+            <div class="skills-icon"><img src="src/static/icon/icons8-javascript-144.svg" alt=""></div>
+            <div class="skills-icon"><img src="src/static/icon/icons8-react-native-144.svg" alt=""></div>
         </div>
     </section>
 
@@ -188,8 +186,8 @@
 
                     <div class="right">
                         <h3>Descrição</h3>
-                        <p>Utiliza a API TMVDB para gerar um filme aleátorio dentre os melhores avaliados,
-                            juntamente com suas informações</p>
+                        <p>Utiliza a API TMVDB para gerar um filme aleátorio dentre os melhores avaliados.
+                        </p>
                         <div class="link-project">
                             <a href="https://github.com/ArthurThz/random-movie" target="_blank">Acesse o projeto no
                                 GitHub</a>
@@ -207,7 +205,7 @@
 
                     <div class="right">
                         <h3>Descrição</h3>
-                        <p>Aplicação utilizada para marcar e gerenciar consultas utilizando ReactJS e um db.JSON
+                        <p>Aplicação utilizada para marcar e gerenciar consultas.<br> Utilizando ReactJS e um db.JSON
                             como API</p>
                         <div class="link-project">
                             <a href="https://github.com/ArthurThz/consultaja" target="_blank">Acesse o projeto no
@@ -262,7 +260,7 @@
 
                     <div class="right">
                         <h3>Descrição</h3>
-                        <p>Uma social tree que contem todas as suas redes socias</p>
+                        <p>Aplicativo para facilitar e salvar links importantes.</p>
                         <div class="link-project">
                             <a href="https://github.com/ArthurThz/social-tree" target="_blank">Acesse o projeto no
                                 GitHub</a>
