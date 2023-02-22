@@ -1,418 +1,478 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu portifólio</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="stylesheet" href="src/css/animation.css">
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="stylesheet" href="src/css/animation.css" />
+
     <!-- Ícone da página -->
-    <link rel="icon" href="src/static/icon/area-de-trabalho-do-computador.png">
+    <link
+      rel="icon"
+      href="src/static/icon/area-de-trabalho-do-computador.png"
+    />
     <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Poppins:wght@200;400;500;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <!-- Animation -->
     <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">Olá</span>
-            </h1>
 
-            <h1 class="hide">
-                <span class="text">Seja Bem-Vindo</span>
-            </h1>
-
-            <h1 class="hide">
-                <span class="text">Ao meu portifólio</span>
-            </h1>
-        </div>
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Olá</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Seja Bem-Vindo</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Ao meu portifólio</span>
+        </h1>
+      </div>
     </div>
 
     <div class="slider"></div>
     <!-- Navbar -->
     <nav class="navbar">
-        <!-- left/top side -->
-        <div class="nav-left">
-            <div class="sidebar-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <h1>Meu portifólio</h1>
+      <!-- left/top side -->
+      <div class="nav-left">
+        <div class="sidebar-menu">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <!-- right/bottom side -->
-        <ul class="nav-right">
+        <h1>Meu portifólio</h1>
+      </div>
+      <!-- right/bottom side -->
+      <ul class="nav-right">
+        <div class="nav-item">
+          <li class="sidebar-item">
+            <a href="#about-me">Sobre mim</a>
+          </li>
+        </div>
 
-            <div class="nav-item">
-                <li class="sidebar-item">
-                    <a href="#about-me">Sobre mim</a>
-                </li>
-            </div>
+        <div class="nav-item">
+          <li class="sidebar-item">
+            <a href="#projects">Projetos</a>
+          </li>
+        </div>
 
-            <div class="nav-item">
-                <li class="sidebar-item">
-                    <a href="#projects">Projetos</a>
-                </li>
-            </div>
+        <div class="nav-item">
+          <li class="sidebar-item">
+            <a
+              href="https://www.linkedin.com/in/arthur-theodoro-752616182/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+        </div>
 
-            <div class="nav-item">
-                <li class="sidebar-item">
-                    <a href="https://www.linkedin.com/in/arthur-theodoro-752616182/" target="_blank">Linkedin</a>
-                </li>
-            </div>
-
-            <div class="nav-item">
-                <li class="sidebar-item">
-                    <a href="https://github.com/arthurthz" target="_blank">Github</a>
-                </li>
-            </div>
-        </ul>
+        <div class="nav-item">
+          <li class="sidebar-item">
+            <a href="https://github.com/arthurthz" target="_blank">Github</a>
+          </li>
+        </div>
+      </ul>
     </nav>
     <!-- Presentation -->
     <section id="home" class="initial-content">
-        <div class="presentation">
-            <div class="introduction">
-                <h1>Meu nome é <br><span>Arthur Theodoro</span></h1>
-                <p>Sou desenvolvedor Front-End</p>
-                <p>Venha conhecer um pouco mais sobre mim</p>
-                <a class="btn-initial" href="#about-me">Bora lá!</a>
-            </div>
-
-            <div class="presentation-img">
-                <img src="src/static/icon/Programming Customizable Isometric Illustrations _ Amico Style.png" alt="">
-            </div>
+      <div class="presentation">
+        <div class="introduction">
+          <h1>Meu nome é <br /><span>Arthur Theodoro</span></h1>
+          <p>Sou desenvolvedor Front-End</p>
+          <p>Venha conhecer um pouco mais sobre mim</p>
+          <a class="btn-initial" href="#about-me">Bora lá!</a>
         </div>
+
+        <div class="presentation-img">
+          <img
+            src="src/static/icon/Programming Customizable Isometric Illustrations _ Amico Style.png"
+            alt=""
+          />
+        </div>
+      </div>
     </section>
     <!-- About me section -->
     <section id="about-me" class="about-me">
-        <h1>Sobre mim</h1>
-        <div class="container-img">
-            <img src="src/static/img/perfil-portifolio.jpg" alt="">
+      <h1>Sobre mim</h1>
+      <div class="itens-wrapper">
+        <div class="box img">
+          <img
+            class="profile-picture"
+            src="src/static/img/perfil-portifolio.jpg"
+            alt=""
+          />
         </div>
-        <div class="p-wrapper">
-            <div class="item-about active">
-                <h2>O inicio</h2>
-                <div class="text">
-                    <p>Minha primeira experiência com programação veio no ano de em 2016 quando ingressei no ensino
-                        médio que era integrado ao técnico.</p>
-                    <p> No começo a parte front-end não me cativou pois eram uma infinidade de tags para decorar.</p>
-                    <p>Não utilizávamos Javascript, então faziamos apenas páginas estáticas.</p>
-                    <p>Acabei me identificando com Java e queria seguir na área de back-end.</p>
-                </div>
-
-            </div>
-            <div class="item-about">
-                <h2>A decepção</h2>
-                <div class="text">
-                    <p>Conclui o ensino médio em 2018 e imediatamente comecei a aplicar para vagas de desenvolvedor.</p>
-                    <p>Sem experiência e com poucos conhecimentos, quase não conseguia entrevistas.</p>
-                    <p>Me frustrei e comecei a trabalhar na área admistrativa.</p>
-                    <p>Permaneci até o final de 2020 e fiquei durante todo este período sem qualquer contato com
-                        programação.</p>
-                </div>
-
-            </div>
-            <div class="item-about">
-                <h2>A certeza</h2>
-                <div class="text">
-                    <p>Em 2021 voltei a estudar.</p>
-                    <p>Buscando um norte no youtube acabei encontrando um vídeo de um rapaz fazendo um clone do
-                        instagram
-                        apenas com
-                        html e css.</p>
-                    <p>Pesquisei mais sobre e vi como o front-end poderia proporcionar uma experiência visual e
-                        funcional
-                        ao mesmo tempo.</p>
-                    <p>Foi a partir daquele
-                        momento que tive a certeza, queria fazer aquilo para o resto da vida.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="arrows-container">
-
-            <img class="arrow-about left-about" src="src/static/icon/left-arrow.png" alt="seta esquerda">
-            <img class="arrow-about right-about" src="src/static/icon/right-arrow.png" alt="seta direita">
+        <div class="box">
+          <div>
+            <p>
+              Me chamo Arthur, e gostaria de atuar como desenvolvedor front-end
+              JR.
+            </p>
+            <p>Tenho conhecimentos em HTML, CSS, JS e ReactJS. <br /></p>
+            <p>Meu GitHub e Linkedin encontram-se disponíveis para consulta.</p>
+            <p>
+              Sinta-se a vontade para me enviar uma mensagem com uma sugestão ou
+              dúvida.
+            </p>
+          </div>
         </div>
 
+        <div class="box">
+          <div>
+            <p>Possuo experiência com as seguintes ferramentas</p>
+            <ul>
+              <li>React Hooks (useState, useEffect)</li>
+              <li>Consumo de API's</li>
+              <li>Arrays methods</li>
+              <li>Media querys</li>
+              <li>Display Grid e Flex</li>
+              <li>Git e Github</li>
+            </ul>
+          </div>
         </div>
-        <div class="skills">
-            <div class="skills-icon"><img src="src/static/icon/icons8-html-5-144.svg" alt=""></div>
-            <div class="skills-icon"><img src="src/static/icon/icons8-css3-144.svg" alt=""></div>
-            <div class="skills-icon"><img src="src/static/icon/icons8-javascript-144.svg" alt=""></div>
-            <div class="skills-icon"><img src="src/static/icon/icons8-react-native-144.svg" alt=""></div>
+        <div class="box">
+          <div class="techs-imgs">
+            <img src="src/static/icon/icons8-react-native-96.svg" alt="" />
+            <img src="src/static/icon/icons8-css3-96.svg" alt="" />
+            <img src="src/static/icon/icons8-html-5-96.svg" alt="" />
+            <img src="src/static/icon/icons8-javascript-96.svg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <div id="projects" class="container-projects">
-        <h1 class="project-title">Projetos</h1>
-        <div class="project">
-            <ul>
-                <li class="item active ">
-                    <div class="left">
-                        <h1>Random Movie</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/random-movie.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+      <h1 class="project-title">Projetos</h1>
+      <div class="project">
+        <ul>
+          <li class="item active">
+            <div class="left">
+              <h1>Random Movie</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/random-movie.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Utiliza a API TMVDB para gerar um filme aleátorio dentre os melhores avaliados.
-                        </p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/random-movie" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>
+                Utiliza a API TMVDB para gerar um filme aleátorio dentre os
+                melhores avaliados.
+              </p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/random-movie"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Consulta já</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/consultaja.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Consulta já</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/consultaja.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Aplicação utilizada para marcar e gerenciar consultas.<br> Utilizando ReactJS e um db.JSON
-                            como API</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/consultaja" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>
+                Aplicação utilizada para marcar e gerenciar consultas.<br />
+                Utilizando ReactJS e um db.JSON como API
+              </p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/consultaja"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Netflix Clone</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/netflix-clone.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Netflix Clone</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/netflix-clone.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Clone do netflix que utiliza a API do TMVDB</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/Netflix-Clone" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Clone do netflix que utiliza a API do TMVDB</p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/Netflix-Clone"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Landing Page</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/landing-page.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Landing Page</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/landing-page.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Landing page referente à uma empresa de turismo e trilhas</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/landing-page" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Landing page referente à uma empresa de turismo e trilhas</p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/landing-page"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Social Tree</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/social-tree.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Social Tree</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/social-tree.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Aplicativo para facilitar e salvar links importantes.</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/social-tree" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Aplicativo para facilitar e salvar links importantes.</p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/social-tree"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Pokédex</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/pokedex.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Pokédex</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/pokedex.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Aplicativo que simula os cards de Pokémon</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/pokedex" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Aplicativo que simula os cards de Pokémon</p>
+              <div class="link-project">
+                <a href="https://github.com/ArthurThz/pokedex" target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Formulário API VIA CEP</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/formulario.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Formulário API VIA CEP</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/formulario.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Formulário que utiliza a API via cep para preencher os campos dinâmicamente</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/form" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>
+                Formulário que utiliza a API via cep para preencher os campos
+                dinâmicamente
+              </p>
+              <div class="link-project">
+                <a href="https://github.com/ArthurThz/form" target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Do a question</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/question.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Do a question</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/question.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Projeto que gera uma resposta para cada pergunta inserida</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/question" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Projeto que gera uma resposta para cada pergunta inserida</p>
+              <div class="link-project">
+                <a href="https://github.com/ArthurThz/question" target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
 
-                <li class="item">
-                    <div class="left">
-                        <h1>Switch to dark mode</h1>
-                        <div class="container-img">
-                            <img src="src/static/img/projetos/darkmode.PNG" alt="imagem do projeto">
-                        </div>
-                    </div>
+          <li class="item">
+            <div class="left">
+              <h1>Switch to dark mode</h1>
+              <div class="container-img">
+                <img
+                  src="src/static/img/projetos/darkmode.PNG"
+                  alt="imagem do projeto"
+                />
+              </div>
+            </div>
 
-                    <div class="right">
-                        <h3>Descrição</h3>
-                        <p>Projeto que muda o tema com o clique do botão</p>
-                        <div class="link-project">
-                            <a href="https://github.com/ArthurThz/toggle-dark-mode" target="_blank">Acesse o projeto no
-                                GitHub</a>
-                        </div>
-                    </div>
-                </li>
+            <div class="right">
+              <h3>Descrição</h3>
+              <p>Projeto que muda o tema com o clique do botão</p>
+              <div class="link-project">
+                <a
+                  href="https://github.com/ArthurThz/toggle-dark-mode"
+                  target="_blank"
+                  >Acesse o projeto no GitHub</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            </ul>
-        </div>
+      <!-- Projects Carroussel -->
+      <div class="select-project">
+        <button class="arrow left">
+          <img src="src/static/icon/arrow-white.png" alt="arrow icon" />
+        </button>
 
-        <!-- Projects Carroussel -->
-        <div class="select-project">
-            <button class="arrow left"><img src="src/static/icon/arrow-white.png" alt="arrow icon"></button>
+        <ul class="options">
+          <li class="select-item active">Random Movie</li>
 
-            <ul class="options">
-                <li class="select-item active">Random Movie</li>
+          <li class="select-item">Consulta Já</li>
 
-                <li class="select-item">Consulta Já</li>
+          <li class="select-item">Netflix Clone</li>
 
-                <li class="select-item">Netflix Clone</li>
+          <li class="select-item">Landing Page</li>
 
-                <li class="select-item">Landing Page</li>
+          <li class="select-item">Social Tree</li>
 
-                <li class="select-item">Social Tree</li>
+          <li class="select-item">Pokédex</li>
 
-                <li class="select-item">Pokédex</li>
+          <li class="select-item">Formulário</li>
 
-                <li class="select-item">Formulário</li>
+          <li class="select-item">Do a question</li>
 
-                <li class="select-item">Do a question</li>
+          <li class="select-item">Switch to Dark Theme</li>
+        </ul>
 
-                <li class="select-item">Switch to Dark Theme</li>
-            </ul>
+        <button class="arrow right">
+          <img src="src/static/icon/arrow-white.png" alt="arrow icon" />
+        </button>
+      </div>
 
-            <button class="arrow right"><img src="src/static/icon/arrow-white.png" alt="arrow icon"></button>
-        </div>
+      <!-- Projects carroussel mobile -->
+      <div class="select-project-mobile">
+        <button class="arrow-left-mobile">
+          <img src="src/static/icon/arrow-white.png" alt="arrow icon" />
+        </button>
 
-        <!-- Projects carroussel mobile -->
-        <div class="select-project-mobile">
-            <button class="arrow-left-mobile"><img src="src/static/icon/arrow-white.png" alt="arrow icon"></button>
+        <ul class="options-mobile">
+          <li class="select-item-mobile active">Random Movie</li>
 
-            <ul class="options-mobile">
-                <li class="select-item-mobile active">Random Movie</li>
+          <li class="select-item-mobile">Consulta Já</li>
 
-                <li class="select-item-mobile">Consulta Já</li>
+          <li class="select-item-mobile">Netflix Clone</li>
 
-                <li class="select-item-mobile">Netflix Clone</li>
+          <li class="select-item-mobile">Landing Page</li>
 
-                <li class="select-item-mobile">Landing Page</li>
+          <li class="select-item-mobile">Social Tree</li>
 
-                <li class="select-item-mobile">Social Tree</li>
+          <li class="select-item-mobile">Pokédex</li>
 
-                <li class="select-item-mobile">Pokédex</li>
+          <li class="select-item-mobile">Formulário</li>
 
-                <li class="select-item-mobile">Formulário</li>
+          <li class="select-item-mobile">Do a question</li>
 
-                <li class="select-item-mobile">Do a question</li>
+          <li class="select-item-mobile">Switch to Dark Theme</li>
+        </ul>
 
-                <li class="select-item-mobile">Switch to Dark Theme</li>
-            </ul>
-
-            <button class="arrow-right-mobile"><img src="src/static/icon/arrow-white.png" alt="arrow icon"></button>
-        </div>
+        <button class="arrow-right-mobile">
+          <img src="src/static/icon/arrow-white.png" alt="arrow icon" />
+        </button>
+      </div>
     </div>
-
-
-    <!-- Footer -->
-    <footer>
-        <div>
-            <div class="social-media"></div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="src/js/app.js"></script>
     <script src="src/js/mobile.js"></script>
     <script src="src/js/animation.js"></script>
-</body>
 
+</body>
 </html>
