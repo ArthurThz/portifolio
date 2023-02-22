@@ -120,8 +120,21 @@
         align-items: flex-start;
     }
 
-    .about-me .container-img {
-        width: 100%;
+    .about-me h1{
+        margin-bottom: 2em;
+    }
+
+    .about-me .itens-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .itens-wrapper  .box{
+        padding: 0;
+    }
+    .itens-wrapper  .box p{
+        font-size: .9em;
+    }
+    .itens-wrapper  .box ul li{
+        font-size: .9em;
     }
 
     .skills {
